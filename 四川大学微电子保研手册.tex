@@ -1,0 +1,462 @@
+\documentclass[lang=cn,10pt]{elegantbook}
+
+
+
+\title{一本并不专业的四川大学微电子保研手册}
+%\subtitle{MeiShao心事记}
+
+\author{Meishao}
+\institute{一名川大22级微电子本科生}
+\date{\today}
+\version{1.0}
+\bioinfo{始于}{June 28, 2025}
+
+\extrainfo{人生何处不青山。—— WhynotTV}
+
+\setcounter{tocdepth}{3}
+
+\logo{四川大学logo.png}
+\cover{长桥by_stout_1280x1024.png}
+
+% 本文档命令
+\usepackage{array}
+\newcommand{\ccr}[1]{\makecell{{\color{#1}\rule{1cm}{1cm}}}}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{float} 
+%\usepackage{subfigure}
+\usepackage{subcaption}
+
+% 修改标题页的橙色带
+% \definecolor{customcolor}{RGB}{32,178,170}
+% \colorlet{coverlinecolor}{customcolor}
+
+\begin{document}
+
+\maketitle
+\frontmatter
+
+\tableofcontents
+
+\mainmatter
+
+
+\chapter*{前言}
+\markboth{Introduction}{Introduction}
+
+本文致力于帮助四川大学微电子科学工程专业的同学在免试推荐研究生的过程中遇到的一些问题提供建议，但受限于笔者的认知范围及视野，对于很多问题的理解并不深刻甚至可能错误，这点笔者先行致歉，但这并不妨碍本文仍具有一定的参考价值。学弟学妹请辩证阅读本文，本文并非唯一答案，甚至并非正确答案，欢迎对笔者的观点提出质疑同时笔者欢迎讨论，下方有笔者的邮箱，欢迎通过邮件联系笔者。
+
+我的联系方式如下，欢迎在Github提issue或者向我发送邮件，这样能更快获得准确的反馈，发邮件时请备注 {\color{red}{四川大学微电子保研手册}} 或者 {\color{red}{SUMPRH}} 相关内容。
+\begin{itemize}
+  \item 个人主页：\href{https://www.meishao.top/}{https://www.meishao.top/}（随缘更新）
+  \item GitHub 地址：\href{https://github.com/Love-learning-Li/Sichuan-University-Microelectronics-Postgraduate-Recommendation-Handbook}{https://github.com/Love-learning-Li/SCU MESE baoyan Handbook}
+  %\item Gitee 地址：\href{https://gitee.com/ElegantLaTeX}{https://gitee.com/ElegantLaTeX}
+  %\item CTAN 地址：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
+  %\item 下载地址：\href{https://github.com/ElegantLaTeX/ElegantBook/releases}{正式发行版}，\href{https://github.com/ElegantLaTeX/ElegantBook/archive/master.zip}{最新版}
+  %\item 微博：Elegant\LaTeX{}（密码有点忘了）
+  %\item 微信公众号：Elegant\LaTeX{}（不定期更新）
+  %\item 用户 QQ 群：692108391（建议加群）
+  \item 邮件：\email{2286059993@qq.com}
+\end{itemize}
+
+%为保障阅读的美观性，将网址链接中的长文本用如下简写替代，SUMPRH：Sichuan-University-Microelectronics-Postgraduate-Recommendation-Handbook。
+
+\begin{corollary}
+本文尽量避免对各高校、科研院所以及各课题组与导师进行主观评价，相关信息请读者自行寻找。同时该文中可能会出现中英文混合表述的情况，相关简写建议读者自行搜索查询相关含义，并无特殊含义。
+\end{corollary}
+
+本文多次提笔，却又因为种种原因不断搁置，我想面面俱到，却又受限于知识储备和视野而面面俱空，若有机会，笔者可能会坚持完善该文章。如果学弟学妹或者学长学姐进入企业当leader或者进入高校的话，别忘了提携一下笔者，谢谢喵。
+
+封面图片是来自我的舍友{\color{cyan}{@今作流泪泉}}的摄影作品。
+
+\chapter{致谢}
+
+笔者萌生撰写该文的想法始于大三下的期末周，不知道为什么笔者总是喜欢在期末周有一些奇怪的idea。同时笔者在这个过程中很幸运有许多无私的学长学姐、网络上的前辈及老师给予我帮助与鼓励。我很难想象我一个人度过这段时光会有多内耗，幸运的是有人相伴，因此促成笔者撰写本文。也算是为了写这篇致谢才写了这边文章，不知算不算为了这碟醋包了这顿饺子哈哈。
+
+为保障学长学姐的隐私，笔者此处用社交媒体的名称替代，以下排名不分先后：
+\begin{theorem}
+@Ellay(2021级,ZJU)，@咕哒(2020级,UESTC)，@芋泥啵啵(2021级,FDU)，@玄冥(2021级,FDU)，@尤尔戴帝(2020级,FDU)，@soSancious(2020级,THU)，@chaos(2022级,PKU)，@熵减(2020级,FDU)，@左耳朵(2021级,UESTC)，@源之宫(2020级,IMECAS)，@PhilFeelsFree(2012级,UM)，@Max   von   Laue(2020级,IMECAS)，@薛定è了么(2021级)，@Distance.(2021级,SEU)，@Eclipse(2020级,UESTC)，@鱼菌风(2020级,FDU)，@YShuo(2021级,UESTC)，@OPA(2022级,SCU)
+\end{theorem}
+
+
+
+感谢我的好朋友、网络上的前辈：
+\begin{definition}
+@求是鹰(2022级,SCU)，@秋之芒草(2024级,Alibaba)，@Orchid.(2022级,SCU)，@今天是明天的昨天(2024级,Tencent,\href{https://guoruiming.com/}{个人主页})，@7(HUEL)，@上水凡沙(TONGJIU)，@流枫纤尘(THU)，@dqlele(THU)，@睡觉大王(2022级,UESTC)，@Cibo(2022级,CUHK-Shenzhen)，@R0xy(2022级,SCU)，@今作流泪泉(2022级,SCU)，@空大少年carry梦(2022级,SCU)，@慕晨(2022级,SCU)
+\end{definition}
+
+
+
+感谢各位愿意提供线上或线下宝贵交流机会的老师：
+\begin{proposition}
+@张红帅成电adc(张老师社交媒体昵称确实是这个,UESTC)，@陈zy(FDU)，@Su\_YQ(PKU)，@星空(PKU)，@ivor(UM)
+\end{proposition}
+
+还有很多很多同学和学长学姐向我提供帮助，恕难全部一一列出，祝愿各位学长学姐学业顺利，流片成功！祝愿我的好朋友们升学顺利！祝愿各位老师万事如意，学术长青！
+
+\chapter{选择}
+
+\section{夏令营政策调整}
+
+\subsection{2025年夏令营开设政策调整}
+
+
+在2025年5-6月份左右，清华大学传出消息今年将不开设夏令营(后期修正为院校自主决定是否开设夏令营)，同时专业硕士的毕业年限由3年调整为2年。与此同时，南京大学的招生老师也在某群聊中发布消息今年受该{\color{red}{省}}政策调整，将不开设夏令营，因此我们也可以推断得到东南大学也将不开设夏令营。同时复旦大学微电子学院也有同学发邮件询问老师相关事宜，得到的结论是预计不开设。
+
+实际清华大学将预推免报名提前至7.1-7.28，东南大学集成电路学院也将“预推免”提前至7.1-7.31。
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{figure/THU夏令营通知.png}
+		\caption{THU夏令营通知}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{figure/SEU夏令营通知.png}
+		\caption{SEU夏令营通知}
+	\end{subfigure}
+	\caption{THU和SEU夏令营通知}
+\end{figure}
+
+%因此这对于主申复旦的同学笔者感觉不太友好。因此截止至2025年6月28日，结合学长学姐往年常申请的院校，共如下院校开设夏令营：
+
+%\begin{figure}[H]
+%	\centering
+%	\begin{subfigure}{0.45\linewidth}
+%		\centering
+%		\includegraphics[width=0.85\linewidth]{figure/夏令营开设情况1.png}
+%		\caption{夏令营开设情况1}
+%	\end{subfigure}
+%	\centering
+%	\begin{subfigure}{0.45\linewidth}
+%		\centering
+%		\includegraphics[width=0.85\linewidth]{figure/夏令营开设情况2.png}
+%		\caption{夏令营开设情况2}
+%	\end{subfigure}
+%	\caption{夏令营开设情况}
+%\end{figure}
+
+
+%\begin{figure}[H] %htbp
+%\centering
+%\includegraphics[scale=0.27]{figure/夏令营开设情况.png}
+%\caption{夏令营开设情况}
+%\end{figure}
+
+
+\subsection{22级推免政策调整}
+
+根据大三上学期笔者数学学院同学她们学院开大会的结果，预计上调决定是否具有保研资格的综合排名中必修成绩的占比，因此在大一/大二学年，必修课程学分较多的时候争取拿下较为不错的必修成绩，以便于大三学年减小必修课程压力，同时腾出部分时间进行科研训练。同时对于川大微电子，大三的课业难度不容小觑，如果你想在拿到不错的必修成绩的基础上开始一些科研训练的话，这对于个人的要求笔者认为是较大的，很难一概而论。
+
+\subsection{信息获取途径}
+
+笔者推荐大家可以在一些社交媒体上更快更及时的了解到相关院校的招生/夏令营信息，例如小红书、咸鱼等等平台，不过在这些平台也会有一些同学传播焦虑，大家适当看待即可。
+
+\begin{corollary}%Attention
+大家在社交媒体或某二手平台请教问题时，请注意知识付费的问题。有些博主要求一杯咖啡或者奶茶，笔者认为这并算多也并不过分。他或她所能为你提供信息的价值是我们更关注的。同时，如果我们在社交媒体上公开询问类似“某高校的某课题组/某老师怎么样”的问题时，以模拟ic为例，模拟ic的圈子并不大，给出地域+方向大概率可以确定是哪位或者说哪几位老师，所以学弟学妹再提问或请教的时候请注意言辞。
+\end{corollary}
+
+\section{选择方向}
+
+首先选择导师和选择方向是分不开的，或者说选择学校和选择方向是分不开的。因此这里笔者先讨论选择方向。
+
+\subsection{是否要转码做ai或其他}
+
+在2025年这个时间点，看到做ai的同学人手顶会很难不羡慕，成果多正反馈快，很难不令人心动。此处笔者并不讨论优劣，笔者认为自己也没有资格讨论，此处笔者仅给出自己了解到的真实案例吧。
+
+在申请夏令营期间，特别是{\color{red}{自动化所、计算所、浙大集成电路学院制造所}}，如果你能具备一定的LMM、DL等背景，笔者认为这些背景将会带来一定的优势与帮助。
+
+\subsection{传统集成电路领域}
+
+笔者首先给出关于集成电路专业升学的方向的大致分类：
+
+
+对于笔者而言，在本科阶段接受到的关于模拟集成电路和数字集成电路的课业知识受限，同时项目经历相对并不出色。
+
+\section{选择院校}
+
+\subsection{大陆内升学}
+
+对于集成电路或微电子专业的同学，我们的升学去向选择并不多，下面笔者给出两张图片：
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{figure/28所名单.png}
+		\caption{28所名单}
+	\end{subfigure}
+	\centering
+	\begin{subfigure}{0.45\linewidth}
+		\centering
+		\includegraphics[width=0.85\linewidth]{figure/985分级.png}
+		\caption{985分级}
+	\end{subfigure}
+	\caption{大陆内升学去向}
+\end{figure}
+
+此处985分级图片源自知乎，其正确性虽有待商榷，不过对于我们择校做参考仍具有一定价值。因此如果我们想在这个阶段提升院校档次同时进入一所集成电路传统意义上的强校，那其实我们的选择并不多：THU、PKU、ZJU、CAS、FDU、SJTU、UESTC、SEU。因此推免时的择校是一件很重要的事情，此处笔者并未讨论一所高校多个学院招生的情况，例如SEU的集成电路学院与射光所同时招生；CAS的微电子所与半导体所、集成电路学院同时招生等等。不过读者能理解笔者的意思即可。
+
+\subsection{出境或类出境升学}
+
+
+香港科技大学(广州)——红鸟夏令营，港科广硕士是强com，需通过学院初审后再选导师；港中深集成电路授课型硕士(\href{https://sse.cuhk.edu.cn/article/2019}{官网链接})，笔者整体搜下来似乎做模拟ic的只有刘寻老师(\href{https://sse.cuhk.edu.cn/faculty/liuxun}{刘寻老师主页})；澳门大学。
+
+传统港校的集成电路方面笔者并不了解，期待读者的投稿。
+
+此处笔者展开讲述一下澳门大学，首先对于我们来说，澳门大学可以通过传统的{\color{red}{申请制}}也可以走{\color{red}{免试研究生}}的政策过去。笔者此处不会给出“澳门大学一定比哪所学校强”的结论，让我们来看结果，以同在成都的电子科技大学为例，电子科技大学每年前往澳门大学深造的同学数量很多，因此我们可以得出至少在部分电子科技大学同学的心中，澳门大学在某些情况下是一个比本校更优的选择。
+
+同时对于一些澳大的强组，其入组的bar非常高，特别是对于直博的同学，以笔者申请的澳大某ADC强组为例，往年的直博选手bar为清北本+有相关项目基础，同时该组今年不再招收本科生直博，具体强组和强校的选择问题我们在2.5节讨论。
+
+
+
+\subsection{出国升学}
+
+笔者目前了解到的有TUM Asia – Technical University of Munich Asia(新加坡)，Technische Universiteit Delft - TU Delft(荷兰)，Nanyang Technological University - NTU Singapore(新加坡)， National University of Singapore(新加坡)，KU Leuven(比利时)，Eidgenössische Technische Hochschule Zürich - ETH Zurich(瑞士)。
+
+
+\section{选择导师}
+
+
+
+
+
+
+
+\chapter{实操}
+
+\section{个人简历}
+
+不建议使用花里胡哨的word模板，overleaf和github上有很多LaTeX模板，此处笔者给出自己用的LaTeX模板的github仓库链接\href{https://github.com/YangtaoGe518/Resume-CN}{https://github.com/YangtaoGe518/Resume-CN}。
+
+效果如下图所示：
+
+\begin{figure}[H] %htbp
+\centering
+\includegraphics[scale=0.7]{figure/笔者的简历.png}
+\caption{笔者的简历}
+\end{figure}
+
+其中一些敏感信息及个人信息笔者已做模糊处理。
+
+\begin{corollary}
+\begin{itemize}
+\item 项目描写要写清楚：我做了什么，为了解决什么，有哪些解决方案，各解决方案的对比，我选择了哪个解决方案，效果怎么样，是否还存在什么问题
+\item 获奖情况中不建议写类似“省级奖项x6，校级奖项x8”的写法，将具体的比赛/荣誉写出来
+\item 学生邮箱中不建议出现大写字母；同时简历中的标点符号统一，若英文则全英文，若中文则全中文，不建议混用标点符号
+\item 可以考虑在一些社交媒体或二手平台上找人{\color{red}{付费}}修改简历，但笔者认为简历的核心竞争力还是在你自身表现出的能力
+\item 建议中文简历填满一页，不建议一页多或者不到一页
+\end{itemize}
+\end{corollary}
+
+
+\section{套磁}
+
+
+
+
+\section{面试}
+
+
+
+
+\chapter{个人提升}
+
+\section{必修课程建议}
+
+
+
+\section{科研建议}
+
+
+
+\section{竞赛建议}
+
+
+
+\section{其他}
+
+
+\chapter{奇技淫巧}
+
+\section{带你学}
+
+
+
+\section{自学}
+
+
+\section{联合培养实验室}
+
+本章节致力于介绍一些笔者了解到的
+
+\subsection{保研辅导机构}
+
+笔者并不鼓励大家报名保研辅导机构，首先据笔者了解到的部分保研辅导机构，其大多是卖文书资料、模板等等，厉害一点的可以联系到相应学校的学长学姐，更有甚者可以带你发论文。不过笔者了解到的是这些论文大多是英文ei或者是sci3-4区。论文含金量一定程度上是和发表难度呈正比的，所以这些机构带着一起发的，特别是集成电路设计方向的论文，大家也懂得都懂，笔者也不过多赘述。
+
+\chapter{一些有意思的问题讨论}
+
+本章节致力于介绍一些笔者认为十分有意思的问题，同时笔者会注明问题的出处。
+
+
+1.怎样区分Science和Engineering，什么是一个集成电路博士生可以做的而十个IC公司的工程师做不了的?
+
+出处：bilibili-WhynotTV
+
+2.如何培养好的学术taste？
+
+
+3.
+
+\section{重制版from 2025.9.9}
+
+笔者回过头看之前写下的文字，不乏部分幼稚甚至错误的观点，笔者也只能一边写一边打热补丁，尽力将自己最新的观点表达出来。
+
+\section{如何选导师}
+
+\subsection{学术能力}
+
+首先，选导师是一件双向奔赴的事情，你可能需要注意很多事情，我们一件一件来讨论。首先笔者认为，我们应该选择一位具备一定学术能力的导师。其评价指标包括但不限于如下内容：
+
+\begin{itemize}
+\item 近3-5年的产出水平
+\item 近3-5年的基金水平(如国自然、青A、青B、青C等等)
+\item 或许也可以看看近3-5年的专利水平
+\item 等等
+\end{itemize}
+
+首先，对于我们专业——微电子科学与工程/集成电路，如果我们想查某一位学者的论文发表情况，以我校龚敏老师为例，直接按如下搜索格式在Bing/Google查找即可：
+
+\textbf{搜索格式建议：min gong sichuan university ieee}
+
+
+按如上方式大概率可以查询到目标导师最近3-5年的论文发表情况，但是这对新入职高校1-2年的老师不太利好，这种情况的老师可能刚开始带学生1年甚至刚开始招生，因此论文发表情况较他们博士期间可能骤降，这种情况我们后面在老师帽子章节讨论。
+
+以设计方向为例，特别是模拟集成电路设计，常见的期刊/会议发表难度(或许可一定程度上等价含金量)如下所示：
+
+\begin{itemize}
+\item T0:ISSCC、DAC
+\item T0.5:JSSC、CICC、VLSI、ESSCIRC、ASSCC、RFIC、FPGA
+\item T1:TMTT(射频方向)、TCAS-I、TEPL(偏电源方向)
+\item T2:TCAS-II、ISCAC、BIOCAS、SCCLetters
+\end{itemize}
+
+对于数字方向，一些老师可能也会在如下期刊/会议发表论文，是不同于模拟集成电路的“固态电路”圈子，而实偏计算机体系结构/计算机辅助设计等：
+
+\begin{itemize}
+\item DAC、ICCAD、MICRO、SIGMOD等等
+\end{itemize}
+
+数字方向笔者了解的并不深入，给出的参考内容可能偏少，十分抱歉。
+
+器件方向笔者了解的更是浅薄，很抱歉未能给出一些具有参考价值的内容。
+
+
+\subsection{行政职位/帽子}
+
+“帽子”指的的老师目前在传统国内学术圈所获得的“一种评级”，同时IEEE fellow笔者觉得这也算一种帽子，虽然非国内评定，帽子的大致含义可参考下表：
+
+%\begin{table}[H]
+%  \centering
+%  \caption{帽子是什么}
+%  \begin{tabular}
+%    \toprule
+%     Tx &  帽子名称  & 大致含义\\
+%    \midrule
+%    T0 &  院士、IEEE fellow & 资源丰富、大课题组、不愁流片经费 \\
+%    T1 &  杰青 & 资源丰富、大课题组、不愁流片经费 \\
+%    T2 &  青千/长江 & 资源丰富、大课题组、不愁流片经费 \\
+%    T3 &  海优 & 可能是刚回国的导师，由于非升即走的压力，可能对学生要求较严格(纯笔者主观猜测，并无依据) 
+%    \bottomrule
+%  \end{tabular}
+%\end{table}
+
+
+在校内的话一般会有：教授、研究员；副教授、副研究员、助理教授(Assistant Professor,AP)。其中特聘研究员指的是老师目前还处于非升即走的考核期，需要一定时间内(如3-5年内)完成一定的论文+基金的数量才能留任/拿编制。
+
+对于笔者自身而言，笔者本人并不排斥push(甚至觉得push挺好的)，同时笔者也比较期待能进入一些年轻/平级化的课题组，因此笔者会更倾向于找一位年轻老师(特聘研究员、特聘副研究员、助理教授)。
+
+但这并不一定适用于所有人！！！
+
+但这并不一定适用于所有人！！！
+
+但这并不一定适用于所有人！！！
+
+重要的事情说三遍，这只是笔者自己的想法和考量。
+
+行政职位指的就是在校内或者说学院内的职位，比如说：教学主任、院长、院长助理等等。要注意提前了解老师在行政职位和学术上的重心分配，若老师想进一步提升行政职位，可能在学术上投入的时间会减小，会更多的投入到教学或其他工作中。
+
+\subsection{方向}
+
+选方向和选导师的离不开的，选导师和
+
+
+
+
+
+
+
+
+\chapter{夏令营/预推免面试}
+
+思来想去，还是直接罗列各个院校的夏令营和面试情况学弟学妹们读起来会更直接些，借鉴CS-BAOYAN的风格，么么哒。
+
+本文用于学弟学妹大致感受夏令营或预推免进入面试的bar，同时对面试风格有大致印象。
+
+在经济允许的情况下，笔者强烈建议学弟学妹们尽可能报名所有可以报名的院校。但是笔者经过很多次的报名后，笔者的想法是你当然可以海投很多所学校，但是这个offer建议是无论如何你都会去的，比如title更好的学校申请不顺利，或者方向不喜欢，无论怎么样你都会去这个offer，那么这个offer的报名就是有意义的。但是可能有学弟学妹可能会说，我就想去TOP2，无所谓方向，这也是一种选择。
+
+但是如果已经拿到自己心满意足的{\color{red}{究极宇宙无敌铁offer}}，一定要确定铁offer不会被鸽，那可以考虑后续不去申请其他院校，把机会留给真正需要的同学，“集邮”的想法笔者认为是不太好的。
+
+\section{免责声明及叠甲}
+
+由于夏令营和预推免的保密要求，笔者并不会直接描述老师所提问问题的具体内容，{\color{red}{笔者给出老师提问的具体内容均由豆包ai生成}}，仅供参考。
+
+\section{东南大学}
+
+\subsection{信院-通信方向}
+
+东南大学夏令营开始的相对较晚，也可以理解为预推免最早开始的一批院校
+
+东南大学笔者申请的是通信相关的专硕，专业跨度较大。因此会遇到老师提问关于“通信原理”等相关课程的基础知识时答不上来的情况，十分尴尬。同时笔者有过一些关于模数转换器的科研经历，但是面试时老师们似乎并不了解的样子。这令笔者很是难过，最终笔者也是低位候补(即排名靠后)。
+
+Q1: 面试时老师具体提问了关于我设计的SAR ADC中的基准参考源 $V_{ref}$ 的设计和考量？
+
+A1: $V_{ref}$的设计直接关系到我们的CDAC电容阵列与比较器一起工作对当前输出数字码的正确与否。解决方法有使用高精度的电压基准源，或者采样1.85进制、冗余码等方法从数字端或者说后期处理上减少其带来的影响。
+
+Q2: 我在简历中提到我先设计了理想元件的sigma delta Modulator，后续又考虑非理想因素调优结构，请问我考虑了哪些非理想因素？
+
+A2: 考虑到了运放带宽的有限、增益的有限以及各模块的时钟之间的time skew(即从源时钟到达子模块时之间的延迟差)。
+
+
+\section{北京大学}
+
+北大集成强烈建议学弟学妹们套磁，即使菜如笔者也能入营误闯天家。当时面试旁边都是东南rk1、成电rk前几，你川只有笔者和rk1的大佬(手动狗头)。学弟学妹如果入营北大集成的话，欢迎给笔者发邮件，么么哒。
+
+\subsection{北大集成-夏令营}
+
+\subsubsection{设计方向}
+
+上来先抽一道题，是随机数那种，喊一下开始跳转，再喊一下停，根据屏幕上的数字抽取对应的题目。题目笔者认为难度是有的，但是做为一名能够去往北大集成电路学院设计方向直博的选手，这些题目是应该要答出来的。笔者有一道自认为达出来了一半，所以最后夏令营的面试结果并不理想。
+
+笔试题目：Q1: 将一个两级运放接成单位增益负反馈的形式，求其建立时间。
+
+A1: 笔者认为建立时间其实就是输出端电容与输出电阻的RC充电过程，要注意此时输出电阻在负反馈作用下会改变。或者说建立时间就是1/BW，注意不是GBW。
+
+Q2: 是关于建立时间、保持时间的讨论问题，类似于下图。
+
+
+
+
+
+
+
+
+\chapter{修订历史}
+
+V0.2 笔者撰写于预推免面试回成都的飞机上
+
+
+\end{document}
