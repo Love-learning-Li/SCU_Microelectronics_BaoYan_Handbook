@@ -1,34 +1,13 @@
-<!-- Author : Dongsheng Deng & Liam Huang-->
-<!-- Program Email: elegantlatex2e@gmail.com -->
 
-[Homepage](https://elegantlatex.org/) | [Github](https://github.com/ElegantLaTeX/ElegantBook) | [CTAN](https://ctan.org/pkg/elegantbook) | [Download](https://github.com/ElegantLaTeX/ElegantBook/releases) | [Wiki](https://github.com/ElegantLaTeX/ElegantBook/wiki) | [Weibo](https://weibo.com/elegantlatex)
+[Personal site](https://love-learning-li.github.io/) | [Github](https://github.com/Love-learning-Li/SCU_Microelectronics_BaoYan_Handbook) | [Download](https://github.com/Love-learning-Li/SCU_Microelectronics_BaoYan_Handbook/blob/main/%E5%9B%9B%E5%B7%9D%E5%A4%A7%E5%AD%A6%E5%BE%AE%E7%94%B5%E5%AD%90%E4%BF%9D%E7%A0%94%E6%89%8B%E5%86%8C.pdf)
 
-![License](https://img.shields.io/ctan/l/elegantbook.svg) ![CTAN Version](https://img.shields.io/ctan/v/elegantbook.svg) ![Github Version](https://img.shields.io/github/release/ElegantLaTeX/ElegantBook.svg) ![Repo Size](https://img.shields.io/github/repo-size/ElegantLaTeX/ElegantBook.svg)
+<!-- ![License](https://img.shields.io/ctan/l/elegantbook.svg) ![CTAN Version](https://img.shields.io/ctan/v/elegantbook.svg) ![Github Version](https://img.shields.io/github/release/ElegantLaTeX/ElegantBook.svg) ![Repo Size](https://img.shields.io/github/repo-size/ElegantLaTeX/ElegantBook.svg) -->
 
 -------
 
-# ElegantBook: An Elegant LaTeX Template for Books
-
-ElegantBook is designed for writing books, created by [Dongsheng Deng](https://ddswhu.me/) and [Liam Huang](https://liam.page/). Just enjoy it! If you have any questions, suggestions or bug reports, you can create issues or contact us at elegantlatex2e@gmail.com.
-
-## Important Notes
-
-For some reasons, __unauthorized__ pull requests are **UNACCEPTABLE** since May 20, 2019. For those who want to help revise the templates, submit issues or clone to your own repository to modify under the LPPL-1.3c.
-
-## Acknowledgement
-
-Thank [sikouhjw](https://github.com/sikouhjw) and [syvshc](https://github.com/syvshc) for their quick response to Github issues and continuously support work for ElegantLaTeX.
-
-Thank ChinaTeX and [LaTeX Studio](http://www.latexstudio.net/) for their promotion. 
+# Sichuan-University-Microelectronics-BaoYan-Handbook
 
 
-## License
-
-This work is released under the LaTeX Project Public License, v1.3c or later.
+> Author : meishao
 
 
-## Derivative Works
-
-+ [ElegantBookdown](https://github.com/XiangyunHuang/ElegantBookdown)：[XiangyunHuang](https://github.com/XiangyunHuang) developed a Bookdown template based on ElegantBook.
-+ [bookdownplus](https://github.com/pzhaonet/bookdownplus): maintained by [pzhaonet](https://github.com/pzhaonet).
-+ [PanBook](https://github.com/annProg/PanBook)：a markdown-based writing workflow Developed by [annProg](https://github.com/annProg).
