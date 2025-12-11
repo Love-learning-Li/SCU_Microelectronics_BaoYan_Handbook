@@ -11,7 +11,6 @@
 \contentsline {subsection}{\numberline {2.3.1}大陆内升学}{4}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}出境或类出境升学}{5}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}出国升学}{5}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}选择导师}{5}{section.2.4}%
 \contentsline {chapter}{\numberline {3}实操}{6}{chapter.3}%
 \contentsline {section}{\numberline {3.1}个人简历}{6}{section.3.1}%
 \contentsline {section}{\numberline {3.2}套磁}{7}{section.3.2}%
@@ -38,5 +37,9 @@
 \contentsline {subsection}{\numberline {7.3.1}北大集成-夏令营}{13}{subsection.7.3.1}%
 \contentsline {subsubsection}{\numberline {7.3.1.1}设计方向}{13}{subsubsection.7.3.1.1}%
 \contentsline {subsection}{\numberline {7.3.2}北大软微-夏令营}{13}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}北京大学}{13}{section.7.4}%
-\contentsline {chapter}{\numberline {8}修订历史}{14}{chapter.8}%
+\contentsline {subsection}{\numberline {7.3.3}北大软微-预推免}{13}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}浙江大学}{14}{section.7.4}%
+\contentsline {section}{\numberline {7.5}浙大集院-制造所}{14}{section.7.5}%
+\contentsline {section}{\numberline {7.6}南京大学}{14}{section.7.6}%
+\contentsline {section}{\numberline {7.7}南大电院-集成电路工程}{14}{section.7.7}%
+\contentsline {chapter}{\numberline {8}修订历史}{15}{chapter.8}%

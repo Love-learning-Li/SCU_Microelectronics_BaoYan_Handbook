@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.19)  4 DEC 2025 11:00
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.10.19)  11 DEC 2025 16:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1477,11 +1477,11 @@ Chapter 1.
 ]
 Chapter 2.
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 101.
+(Font)              scaled to size 12.0pt on input line 99.
 File: figure/THU夏令营通知.png Graphic file (type bmp)
 <figure/THU夏令营通知.png>
 LaTeX Font Info:    Font shape `TU/texgyretermes(0)/b/n' will be
-(Font)              scaled to size 9.0pt on input line 113.
+(Font)              scaled to size 9.0pt on input line 111.
 File: figure/SEU夏令营通知.png Graphic file (type bmp)
 <figure/SEU夏令营通知.png>
 [3
@@ -1506,7 +1506,7 @@ Chapter 4.
 ]
 Chapter 5.
 
-Overfull \hbox (7.8631pt too wide) in paragraph at lines 319--338
+Overfull \hbox (7.8631pt too wide) in paragraph at lines 314--333
  [][] 
  []
 
@@ -1523,9 +1523,9 @@ Chapter 7.
 ]
 File: QuestionImg/建立时间与保持时间.png Graphic file (type bmp)
 <QuestionImg/建立时间与保持时间.png>
- [13]
+ [13] [14]
 Chapter 8.
-[14
+[15
 
 ] (./四川大学微电子保研手册.aux)
  ***********
@@ -1542,19 +1542,19 @@ Package rerunfilecheck Warning: File `四川大学微电子保研手册.out' has
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `四川大学微电子保研手册.out':
-(rerunfilecheck)             Before: A96BF270398B23A1EC669DDC5BDDC598;5013
-(rerunfilecheck)             After:  1196370D908351A7CC2FF97E6E4777D2;5122.
+(rerunfilecheck)             Before: 628F0057ACEFACED9C71E8EDA3ADA143;5686
+(rerunfilecheck)             After:  E5E728E146544F22CAB5508D9D21F2AA;5577.
 Package logreq Info: Writing requests to '四川大学微电子保研手册.run.xml'.
 \openout1 = `四川大学微电子保研手册.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45984 strings out of 476720
- 995452 string characters out of 5799958
- 1966249 words of memory out of 5000000
+ 45974 strings out of 476720
+ 995635 string characters out of 5799958
+ 1966975 words of memory out of 5000000
  67229 multiletter control sequences out of 15000+600000
- 562957 words of font info for 98 fonts, out of 8000000 for 9000
+ 562917 words of font info for 93 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  103i,12n,108p,680b,1323s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 四川大学微电子保研手册.pdf (17 pages).
+Output written on 四川大学微电子保研手册.pdf (18 pages).
